@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Oswald&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,50 +21,58 @@
         <div class="images">
             <img src="image1.jpg" alt="bauty image" width="250px" height="500px">
             <img src="odin-lined.png" alt="Odin logo">
+            <p>THE ODIN PROJECT</p>
         </div>
-        <h2 class="firs-subtle">This a test page: <br> Do you want to contribute with our new page? <br> Please, Sign up with us:</h2>
+        <div class="content-form">
 
-        <form action="get">
-            <legend class="legend"> Let's got: </legend>
-
-            <ul class="container-list" style="list-style: none;">
-
-                <li class="container-inputs">
-
-                    <label for="name" id="name">First Name*</label>
-                    <input type="text"name = "user-name" id="name" required>
-
-                </li>
-                <li class="container-inputs">
-
-                    <label for="last-name" id="last-name">Last Name</label>
-                    <input type="text" name="last-name" id="last-name"></li>
-
-                <li class="container-inputs">
-
-                    <label for="user-email" id="user-email">Email*</label>
-                    <input type="email" name="user-email" id="user-email" required>
-
-                </li>
-                <li class="container-inputs">
-                    <label for="user-phone" id="user-phone">Phone Number</label>
-                    <input type="tel" id="user-phone" name="user-phone">
-                </li>
-                <li class="container-inputs">
-                    <label for="user-password" id="user-password">Password</label>
-                    <input type="password" name="user-password" id="user-password" required>
-                </li>
-                <li class="container-inputs">
-
-                    <label for="user-password-confirm" id="user-password-confirm">Confirm Password</label>
-                    <input type="password" name="user-password-confirm" id="user-password-confirm">
+            <h2 class="firs-subtle">This a test page: <br> Do you want to contribute with our new page? <br> Please, Sign up with us:</h2>
+            
+            <form action="get">
+                <legend class="legend"> Let's got: </legend>
+                
+                <ul class="container-list" style="list-style: none;">
                     
-                </li>
-            </ul>
-
-
-
-        </form>
+                    <li class="container-inputs">
+                        
+                        <label for="name" id="name">First Name*</label>
+                        <input type="text"name = "user-name" id="name" required>
+                        
+                    </li>
+                    <li class="container-inputs">
+                        
+                        <label for="last-name" id="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name"></li>
+                        
+                        <li class="container-inputs">
+                            
+                            <label for="user-email" id="user-email">Email*</label>
+                            <input type="email" name="user-email" id="user-email" required>
+                            
+                        </li>
+                        <li class="container-inputs">
+                            <label for="user-phone" id="user-phone">Phone Number</label>
+                            <input type="tel" id="user-phone" name="user-phone">
+                        </li>
+                        <li class="container-inputs">
+                            <label for="user-password" id="user-password">Password*</label>
+                            <input type="password" name="user-password" id="user-password" required>
+                        </li>
+                        <li class="container-inputs">
+                            
+                            <label for="user-password-confirm" id="user-password-confirm">Confirm Password*</label>
+                            <input type="password" name="user-password-confirm" id="user-password-confirm" required>
+                            
+                        </li>
+                        
+                        <li class="button-container">
+                            <input type="submit" value="Submit">
+                        </li>
+                    </ul>
+                    
+                    
+                    
+                </form>
+            </div>
     </div>
     
 </body>
