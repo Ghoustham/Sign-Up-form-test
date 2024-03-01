@@ -37,7 +37,13 @@ img[src="image1.jpg"]{
     height: 100%;
 }
 
-
+.error-message{
+    position: absolute;
+    font-size: 13px;
+    color: rgb(5, 5, 5);
+    right: 40rem;
+    bottom: 21.5em;
+}
 
 p {
 font-family: "Neuton", "serif";
@@ -73,6 +79,15 @@ input {
     border: 2px solid #cfcfcfef;
 
 }
+input:required:invalid:not(:placeholder-shown){
+    border: 2px solid #ec0404fd;
+
+}
+
+input:required:valid:not(:placeholder-shown){
+    border:2px solid green;
+
+}
 
 input[type="submit"]{
     appearance: none;
@@ -94,16 +109,9 @@ input + span::before{
     bottom: .1rem;
 
 }
-input:invalid{
-    border:2px solid red;
-}
 
-input:valid{
-    border:2px solid green;
 
-}
-
-input:invalid + span::before{
+input:invalid:not(:placeholder-shown) + span::before{
 
     position: absolute;
     content: "✖";

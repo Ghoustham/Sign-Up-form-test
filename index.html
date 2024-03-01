@@ -44,7 +44,7 @@
                     <li class="container-inputs">
                         
                         <label for="last-name" id="last-name">Last Name</label>
-                        <input type="text" name="last-name" id="last-name" placeholder=" Your last name"></li>
+                        <input type="text" name="last-name" id="last-name" placeholder=" Your last name" required></li>
                         <span class="info-form user-name"></span>
 
                         <li class="container-inputs">
@@ -55,19 +55,20 @@
                         </li>
                         <li class="container-inputs">
                             <label for="user-phone" id="user-phone">Phone Number</label>
-                            <input type="tel" id="user-phone" name="user-phone" placeholder=" +569998231" minlength="8">
-                            <span class="number-user"></span>
+                            <input type="tel" id="user-phone" name="user-phone" placeholder=" +569998231" minlength="8" required>
+                            <span class="info-form number-user"></span>
                         </li>
                         <li class="container-inputs">
                             <label for="user-password" id="user-password">Password*</label>
-                            <input type="password" name="user-password" id="user-password" placeholder=" ********" minlength="8" required>
+                            <input type="password" name="user-password" id="userpassword" placeholder=" ********" minlength="8" required>
                             <span class="info-form password"></span>
                         </li>
                         <li class="container-inputs">
                             
                             <label for="user-password-confirm" id="user-password-confirm">Confirm Password*</label>
-                            <input type="password" name="user-password-confirm" id="user-password-confirm" placeholder=" *******" minlength="8" required>
+                            <input type="password" name="user-password-confirm" id="userpasswordconfirm" placeholder=" *******" minlength="8" required>
                             <span class="info-form password-confirmation"></span>
+                            <span id= "errormessage" class="error-message"></span>
                             
                         </li>
                         
@@ -81,6 +82,6 @@
                 </form>
             </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
