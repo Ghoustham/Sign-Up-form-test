@@ -19,48 +19,55 @@
 
     <div class="form-container">
         <div class="images">
-            <img src="image1.jpg" alt="bauty image" width="250px" height="500px">
-            <img src="odin-lined.png" alt="Odin logo">
-            <p>THE ODIN PROJECT</p>
+            <img src="image1.jpg" alt="bauty image">
+            <div class="logo-form">
+
+                <img src="odin-lined.png" alt="Odin logo">
+                <p>THE ODIN PROJECT</p>
+            </div>
         </div>
         <div class="content-form">
 
-            <h2 class="firs-subtle">This a test page: <br> Do you want to contribute with our new page? <br> Please, Sign up with us:</h2>
+            <h2 class="firs-subtle">Do you want to contribute with our new page? <br> Please, Sign up with us:</h2>
             
-            <form action="get">
-                <legend class="legend"> Let's got: </legend>
+            <form class="web-form" action="get">
+                <legend class="legend"> Let's go: </legend>
                 
                 <ul class="container-list" style="list-style: none;">
                     
                     <li class="container-inputs">
                         
                         <label for="name" id="name">First Name*</label>
-                        <input type="text"name = "user-name" id="name" required>
+                        <input type="text"name = "user-name" id="name" placeholder=" Your name" required>
                         
                     </li>
                     <li class="container-inputs">
                         
                         <label for="last-name" id="last-name">Last Name</label>
-                        <input type="text" name="last-name" id="last-name"></li>
-                        
+                        <input type="text" name="last-name" id="last-name" placeholder=" Your last name"></li>
+                        <span class="info-form user-name"></span>
+
                         <li class="container-inputs">
                             
                             <label for="user-email" id="user-email">Email*</label>
-                            <input type="email" name="user-email" id="user-email" required>
+                            <input type="email" name="user-email" id="user-email" placeholder=" Your@email.com" required>
                             
                         </li>
                         <li class="container-inputs">
                             <label for="user-phone" id="user-phone">Phone Number</label>
-                            <input type="tel" id="user-phone" name="user-phone">
+                            <input type="tel" id="user-phone" name="user-phone" placeholder=" +569998231" minlength="8">
+                            <span class="number-user"></span>
                         </li>
                         <li class="container-inputs">
                             <label for="user-password" id="user-password">Password*</label>
-                            <input type="password" name="user-password" id="user-password" required>
+                            <input type="password" name="user-password" id="user-password" placeholder=" ********" minlength="8" required>
+                            <span class="info-form password"></span>
                         </li>
                         <li class="container-inputs">
                             
                             <label for="user-password-confirm" id="user-password-confirm">Confirm Password*</label>
-                            <input type="password" name="user-password-confirm" id="user-password-confirm" required>
+                            <input type="password" name="user-password-confirm" id="user-password-confirm" placeholder=" *******" minlength="8" required>
+                            <span class="info-form password-confirmation"></span>
                             
                         </li>
                         

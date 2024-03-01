@@ -1,25 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     font-family: "Oswald", sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #ebebeb;
     justify-content: center;
-}
-input,
-button
-{
-  width: 200px;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
 }
 
 .form-container{
     display: flex;
     flex-direction: row;
-    width: 700px;
     height: 500px;
+    width: 700px;
     align-content: center;
     margin-top: 190px;
     border: 2px solid #cfcfcfef;
@@ -33,22 +29,32 @@ img[src="odin-lined.png"]{
     height: 120px;
     left: 5rem;
     bottom: 400px;
-
 }
+
+img[src="image1.jpg"]{
+
+    width: 100%;
+    height: 100%;
+}
+
+
 
 p {
 font-family: "Neuton", "serif";
 font-size: 1.5rem;
 position: relative;
 color: #ffffff;
-left: 1.8rem;
-bottom: 26rem;
+left: 2rem;
+bottom: 24rem;
+width: 200px;
 }
 
 .content-form {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
+    margin-left: 15px;
+    padding: 10px;
+
 }
 h2 {
     width: 400px;
@@ -61,6 +67,7 @@ form {
 }
 input {
     width: 300px;
+    padding: 5px;
     height: 25px;
     border-radius: 3px;
     border: 2px solid #cfcfcfef;
@@ -75,5 +82,93 @@ input[type="submit"]{
     background-color: rgb(4, 48, 37);
     border-radius: 4px;
     border: none;
+
+}
+input + span {
+    position: relative;
+}
+
+input + span::before{
+    position: absolute;
+    left: 19rem;
+    bottom: .1rem;
+
+}
+input:invalid{
+    border:2px solid red;
+}
+
+input:valid{
+    border:2px solid green;
+
+}
+
+input:invalid + span::before{
+
+    position: absolute;
+    content: "✖";
+    font-size: 17px;
+    color: red;
+
+
+}
+
+input:valid + span::before{
+    content: "✓";
+    color: green;
+    font-size: 17px;
+}
+
+span {
+    font-size: 20px;
+    position: relative;
+}
+
+@media only screen and (max-width:700px){
+
+
+    .form-container{
+        display:flex;
+        flex-direction: column;
+        border: none;
+        justify-content: center;
+        box-shadow: none;
+    }
+    .logo-form{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        position: absolute;
+        left: 25%;
+        bottom: -3rem;
+    
+    }
+
+    input + span::before {
+    
+        left: 12rem;
+    }
+
+
+    img[src="image1.jpg"]{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+ 
+    }
+
+
+
+    form, h2, p {
+        width: 100%;
+        height: 100%;
+        border: none;
+
+    }
+
+    input{
+        display: block;
+        width: 100%;
+    }
 
 }
